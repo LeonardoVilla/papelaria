@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Formulário de Pedido</h2>
+
+        <form method="post" action="" enctype="multipart/form-data" class="border border-1 rounded-2 p-3 shadow-sm">
+            <!-- Escolha do Produto -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Escolha o produto:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="agendaComercial" value="Agenda Comercial" required>
+                    <label class="form-check-label" for="agendaComercial">Agenda Comercial</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="agendaIncrivel" value="Agenda Incrível">
+                    <label class="form-check-label" for="agendaIncrivel">Agenda Incrível</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="planerIncrivel" value="Planer Incrível">
+                    <label class="form-check-label" for="planerIncrivel">Planer Incrível</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="caderno" value="Caderno">
+                    <label class="form-check-label" for="caderno">Caderno</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="blocoNotas" value="Bloco de Notas 10X15">
+                    <label class="form-check-label" for="blocoNotas">Bloco de Notas 10X15</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="mousepad" value="Mousepad">
+                    <label class="form-check-label" for="mousepad">Mousepad</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="caneca" value="Caneca">
+                    <label class="form-check-label" for="caneca">Caneca</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="produto" id="miniCalendario" value="Mini calendário de mesa">
+                    <label class="form-check-label" for="miniCalendario">Mini calendário de mesa</label>
+                </div>
+            </div>
+            <hr>
+            <!-- Escolha da Estampa (Com Cards) -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Qual é a estampa para a capa:</label>
+                <div class="row">
+                    <!-- Capa 1 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/1.jpg" class="card-img-top" alt="Capa 1">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa1" value="Capa 1" required>
+                                    <label class="form-check-label" for="capa1">Capa 1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 2 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/2.jpg" class="card-img-top" alt="Capa 2">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa2" value="Capa 2">
+                                    <label class="form-check-label" for="capa2">Capa 2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 3 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/3.jpg" class="card-img-top" alt="Capa 3">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa3" value="Capa 3">
+                                    <label class="form-check-label" for="capa3">Capa 3</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 4 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/4.jpg" class="card-img-top" alt="Capa 4">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa4" value="Capa 4">
+                                    <label class="form-check-label" for="capa4">Capa 4</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/5.jpg" class="card-img-top" alt="Capa 1">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa1" value="Capa 1" required>
+                                    <label class="form-check-label" for="capa1">Capa 5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 2 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/6.jpg" class="card-img-top" alt="Capa 2">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa2" value="Capa 2">
+                                    <label class="form-check-label" for="capa2">Capa 6</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 3 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/7.jpg" class="card-img-top" alt="Capa 3">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa3" value="Capa 3">
+                                    <label class="form-check-label" for="capa3">Capa 7</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 4 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/8.jpg" class="card-img-top" alt="Capa 4">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa4" value="Capa 4">
+                                    <label class="form-check-label" for="capa4">Capa 8</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/9.jpg" class="card-img-top" alt="Capa 1">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa1" value="Capa 1" required>
+                                    <label class="form-check-label" for="capa1">Capa 9</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 2 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/10.jpg" class="card-img-top" alt="Capa 2">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa2" value="Capa 2">
+                                    <label class="form-check-label" for="capa2">Capa 10</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 3 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/11.jpg" class="card-img-top" alt="Capa 3">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa3" value="Capa 3">
+                                    <label class="form-check-label" for="capa3">Capa 11</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 4 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/12.jpg" class="card-img-top" alt="Capa 4">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa4" value="Capa 4">
+                                    <label class="form-check-label" for="capa4">Capa 12</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/13.jpg" class="card-img-top" alt="Capa 1">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa1" value="Capa 1" required>
+                                    <label class="form-check-label" for="capa1">Capa 13</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 2 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/14.jpg" class="card-img-top" alt="Capa 2">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa2" value="Capa 2">
+                                    <label class="form-check-label" for="capa2">Capa 14</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 3 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/15.jpg" class="card-img-top" alt="Capa 3">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa3" value="Capa 3">
+                                    <label class="form-check-label" for="capa3">Capa 15</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 4 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/16.jpg" class="card-img-top" alt="Capa 4">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa4" value="Capa 4">
+                                    <label class="form-check-label" for="capa4">Capa 16</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/17.jpg" class="card-img-top" alt="Capa 1">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa1" value="Capa 1" required>
+                                    <label class="form-check-label" for="capa1">Capa 17</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 2 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/18.jpg" class="card-img-top" alt="Capa 2">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa2" value="Capa 2">
+                                    <label class="form-check-label" for="capa2">Capa 18</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 3 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/19.jpg" class="card-img-top" alt="Capa 3">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa3" value="Capa 3">
+                                    <label class="form-check-label" for="capa3">Capa 19</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capa 4 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="imagens/20.jpg" class="card-img-top" alt="Capa 4">
+                            <div class="card-body text-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="estampa" id="capa4" value="Capa 4">
+                                    <label class="form-check-label" for="capa4">Capa 20</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Continue com as outras capas até Capa 20 -->
+                </div>
+            </div>
+            <hr>
+            <!-- Escolha da Laminação -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Qual laminação:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="laminacao" id="fosca" value="Fosca" required>
+                    <label class="form-check-label" for="fosca">Fosca (R$ 0,00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="laminacao" id="brilho" value="Brilho">
+                    <label class="form-check-label" for="brilho">Brilho (R$ 0,00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="laminacao" id="glitter" value="Glitter">
+                    <label class="form-check-label" for="glitter">Glitter (R$ 10,00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="laminacao" id="linho" value="Linho">
+                    <label class="form-check-label" for="linho">Linho (R$ 10,00)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="laminacao" id="holografico" value="Holográfico">
+                    <label class="form-check-label" for="holografico">Holográfico (R$ 10,00)</label>
+                </div>
+            </div>
+            <hr>
+            <!-- Kits Promocionais -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Kits promocionais:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPromocional" id="kit1" value="Kit 1" required>
+                    <label class="form-check-label" for="kit1">Agenda Comercial + Bloco Notas + Mini Calendário de mesa + Brinde Marcador de página</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPromocional" id="kit2" value="Kit 2">
+                    <label class="form-check-label" for="kit2">Agenda Incrível + Bloco Notas + Mini calendário de mesa + Brinde Marcador de página</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPromocional" id="kit3" value="Kit 3">
+                    <label class="form-check-label" for="kit3">Agenda Comercial + Marcador de página + Mousepad + Caneca + Mini calendário de mesa + Brinde 1 Bloco de notas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPromocional" id="kit4" value="Kit 4">
+                    <label class="form-check-label" for="kit4">Agenda Incrível + Marcador de páginas + Mousepad + Caneca + Mini calendário de mesa + Brinde 1 Bloco de notas</label>
+                </div>
+            </div>
+            <hr>
+            <!-- Monte seu Kit -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Monte seu Kit escolhendo os produtos:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado1" value="Agenda Comercial" required>
+                    <label class="form-check-label" for="personalizado1">Agenda Comercial</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado2" value="Agenda Incrível">
+                    <label class="form-check-label" for="personalizado2">Agenda Incrível</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado3" value="Planer Incrível">
+                    <label class="form-check-label" for="personalizado3">Planer Incrível</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado4" value="Caderno">
+                    <label class="form-check-label" for="personalizado4">Caderno</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado5" value="Bloco de Notas 10X15">
+                    <label class="form-check-label" for="personalizado5">Bloco de Notas 10X15</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado6" value="Mousepad">
+                    <label class="form-check-label" for="personalizado6">Mousepad</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado7" value="Caneca">
+                    <label class="form-check-label" for="personalizado7">Caneca</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado8" value="Mini calendário de mesa">
+                    <label class="form-check-label" for="personalizado8">Mini calendário de mesa</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="kitPersonalizado" id="personalizado9" value="Não desejo montar um kit">
+                    <label class="form-check-label" for="personalizado9">Não desejo montar um kit</label>
+                </div>
+            </div>
+            <hr>
+            <!-- Personalização de Texto -->
+            <div class="mb-4">
+                <label for="personalizacaoTexto" class="form-label fw-bold">Envie a palavra, nome ou frase se desejar personalizar o material:</label>
+                <input type="text" class="form-control" id="personalizacaoTexto" name="personalizacaoTexto">
+            </div>
+
+            <!-- Upload de Imagem -->
+            <div class="mb-4">
+                <label for="uploadImagem" class="form-label fw-bold">Envie a imagem ou logomarca para personalizar o material:</label>
+                <input type="file" class="form-control" id="uploadImagem" name="uploadImagem">
+            </div>
+            <hr>
+            <!-- Forma de Pagamento -->
+            <div class="mb-4">
+                <label class="form-label fw-bold">Forma de pagamento:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="pix" value="Pix" required>
+                    <label class="form-check-label" for="pix">Pix</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="credito" value="Crédito">
+                    <label class="form-check-label" for="credito">Crédito</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="link" value="Link de pagamento">
+                    <label class="form-check-label" for="link">Link de pagamento</label>
+                </div>
+            </div>
+            <hr>
+            <!-- Observação -->
+            <div class="mb-4 p-3 rounded border shadow-sm">
+                <strong>Observação: O prazo para produção é de até 15 dias úteis.</strong>
+                <ul>
+                    <li>A arte da capa será enviada para aprovação via whatsapp dentro prazo de produção.</li>
+                    <li>O elástico e passante serão adicionados conforme a disponibilidade em estoque.</li>
+                    <li>Trabalhamos com pagamento do valor total no ato do pedido.</li>
+                    <li>Estamos localizados na Av. Ary Paes Barreto, nº. 2043, Cristo Rei Várzea Grande.</li>
+                    <li>Caso necessite de entrega, resolveremos quando seu pedidos estiver pronto.</li>
+                </ul>
+                
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
